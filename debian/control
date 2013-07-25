@@ -1,0 +1,12 @@
+Source: ros-hydro-velodyne-utils
+Section: misc
+Priority: extra
+Maintainer: Jack O'Quin <jack.oquin@gmail.com>
+Build-Depends: debhelper (>= 7.0.50~), ros-hydro-catkin
+Homepage: http://ros.org/wiki/velodyne_utils
+Standards-Version: 3.9.2
+
+Package: ros-hydro-velodyne-utils
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-hydro-velodyne-height-map
+Description: ROS tools and utilities metapackage for Velodyne 3D LIDARs. This package is deprecated. Catkin stacks should never use it, but rosbuild stacks depending on velodyne_utils will still work in Hydro. In Indigo, all references must use velodyne_height_map directly.
